@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+    background-image: url(../images/space.jpg);
+}
+
+/* .content {
+    box-sizing: border-box;
+    width: 900px;
+    height: 700px; 
+    color: white; 
+    background-color: rgb(227, 185, 134);
+    border: 3px solid rgb(19, 115, 232); 
+    margin-top: 150px; 
+    margin-left: 550px; 
+
+} */
