@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.map" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
@@ -19,71 +19,80 @@
         <!-- Title of the game -->
         <div class="text-center pt-5" style="font-size: 68px; color: blue; font-family: 'Monoton', cursive; ">Totally Trivial Trivia!</div>
 
+        
+
+
         <!-- Place holder for timer. Will be called by jQuery -->
-        <div class="text-center p-3 text-dark mt-2" style="font-size: 36px;" id="timer">Time Remaining: </div>
+        <div class="text-center p-3 text-dark mt-2" style="font-size: 36px;" id="timer"> <!-- Time Remaining: --> </div>
 
         <!-- Questions will display here -->
-     <div class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> 1.) Jupiter is the larget planet in our solar system.
+     <div id="q1" class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> <!-- 1.) Jupiter is the larget planet in our solar system.
           <form>
                 <input type="radio" value="true" name="true/false" checked>True
                 <input type="radio" value="false" name="true/false" >False 
-          </form>
+          </form> -->
      </div>
 
         <!-- Second question -->
-        <div class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> 2.) Earth is the third planet from the sun. 
+        <div id="q2" class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> <!-- 2.) Earth is the third planet from the sun. 
             <form>
                 <input type="radio" value="true" name="true/false" checked>True
                 <input type="radio" value="false" name="true/false" >False 
-            </form>
+            </form> -->
+        </div>
+
+        <!-- Start Button -->
+        <div class="row">
+        <div class="col-4"></div>
+        <button id="startbtn" class="col-4 btn btn-primary btn-lg"> Begin! </button>
         </div>
 
         <!-- Third question -->
-        <div class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;">3.) Pluto is considered a planet. 
+        <div id="q3" class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> <!-- 3.) Pluto is considered a planet. 
             <form>
                  <input type="radio" value="true" name="true/false" checked>True
                 <input type="radio" value="false" name="true/false" >False 
-            </form>
+            </form> -->
         </div>
 
         <!-- Fourth Question -->
-        <div class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> 4.) There are four planets that have rings around them in our solar system. 
+        <div id="q4" class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> <!-- 4.) There are four planets that have rings around them in our solar system. 
               <form>
                    <input type="radio" value="true" name="true/false" checked>True
                    <input type="radio" value="false" name="true/false" >False 
-                </form>
+                </form> -->
         </div>
 
         <!-- Fifth Question -->
-        <div class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> 5.) Water was recently discovered on Mars suggesting signs of life. 
+        <div id="q5" class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> <!-- 5.) Water was recently discovered on Mars suggesting signs of life. 
             <form>
                  <input type="radio" value="true" name="true/false" checked>True
                  <input type="radio" value="false" name="true/false" >False 
-            </form>
+            </form> -->
         </div>
 
         <!-- sixth question -->
-        <div class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> 6.) There are more stars in the galaxy than there are grains of sand on the Earth's beaches. 
+        <div id="q6" class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> <!-- 6.) There are more stars in the galaxy than there are grains of sand on the Earth's beaches. 
             <form>
                 <input type="radio" value="true" name="true/false" checked>True
                 <input type="radio" value="false" name="true/false" >False 
-            </form>
+            </form> -->
         </div>
 
         <!-- Seventh question -->
-        <div class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> 7.) Neptune was named after the Greek God of thunder. 
+        <div id="q7" class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> <!-- 7.) Neptune was named after the Greek God of thunder. 
             <form>
                 <input type="radio" value="true" name="true/false" checked>True
                 <input type="radio" value="false" name="true/false" >False 
-            </form>
+            </form> -->
         </div>
 
         <!-- Eighth question -->
-        <div class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> 8.) You can fit almost 1,000,000 Earths on the Sun's surface. 
+        <div id="q8" class="text-center p-3 mb-3 text-dark mt-2" style="font-size: 30px;"> <!-- 8.) You can fit almost 1,000,000 Earths on the Sun's surface. 
             <form>
                 <input type="radio" value="true" name="true/false" checked>True
                 <input type="radio" value="false" name="true/false" >False 
-            </form>
+            </form> -->
         </div>
 
         
